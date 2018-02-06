@@ -1,0 +1,103 @@
+<topbar></topbar>
+<section [ngStyle]="{ 'width': '80%', 'margin': '0 auto'} " class="c-signup">
+  <form [formGroup]="signupForm " fxLayout="column " (ngSubmit)="submit(form) ">
+    <h4 mat-dialog-title>Registro</h4>
+    <div fxLayout="row" fxLayoutWrap="wrap">
+      <div fxFlex="100" fxFlex.gt-xs="50" class="pr-1">
+        <mat-form-field>
+          <input matInput placeholder="Nick Usuario ">
+        </mat-form-field>
+  <!--       <mat-form-field>
+
+          <input type="file" ng2FileSelect  />
+
+
+          <div ng2FileDrop [ngClass]="{'dz-file-over': hasBaseDropZoneOver}" (fileOver)="fileOverBase($event)"
+            class="fileupload-drop-zone">
+            Drop file here
+          </div>
+
+        </mat-form-field> -->
+
+
+      </div>
+      <div fxFlex="100" fxFlex.gt-xs="50" class="pr-1">
+        <mat-dialog-content fxLayout="column ">
+
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Nombre ">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Apellido ">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Escribe tu contraseña" [type]="hide ? 'password' : 'text' ">
+            <mat-icon class="show-pwd " matSuffix (click)="hide=! hide ">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Vuelve a escribirla " [type]="hide ? 'password' : 'text' ">
+            <mat-icon class="show-pwd " matSuffix (click)="hide=! hide ">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="Correo ">
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-select placeholder="Grupo ">
+              <mat-option value="S11AW ">S11AW</mat-option>
+              <mat-option value="S21AW ">S21AW</mat-option>
+              <mat-option value="S11AR ">S11AR</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-dialog-content>
+        <mat-dialog-actions fxLayout="column ">
+          <button mat-raised-button color="primary" type="button " fxLayoutAlign="center center ">Crear Cuenta</button>
+        </mat-dialog-actions>
+      </div>
+
+    </div>
+  </form>
+</section>
+<app-footer></app-footer>
+
+
+<!-- <form [formGroup]="signupForm" fxLayout="column" (ngSubmit)="submit(form)">
+  <h4 mat-dialog-title>Registro</h4>
+  <mat-dialog-content fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
+    <div fxFlex="45%" fxLayout="column">
+      <mat-form-field>
+        <input matInput placeholder="Nick Usuario">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Escribe tu contraseña" [type]="hide ? 'password' : 'text'">
+        <mat-icon class="show-pwd" matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Correo">
+      </mat-form-field>
+    </div>
+    <div fxFlex="45%" fxLayout="column">
+      <mat-form-field>
+        <input matInput placeholder="Nombre">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Apellido">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Grupo">
+          <mat-option value="S11AW">S11AW</mat-option>
+          <mat-option value="S21AW">S21AW</mat-option>
+          <mat-option value="S11AR">S11AR</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions fxLayout="column">
+    <button mat-button type="button" fxLayoutAlign="center center">Crear Cuenta</button>
+  </mat-dialog-actions>
+</form> -->

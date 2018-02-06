@@ -1,0 +1,20 @@
+.c-footer {
+  background: #3f51b5;
+  color: #fff;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  padding: 15px;
+}
+
+.c-footer .address{
+  text-align: left;
+}
+.c-footer .fab{
+  font-size: 40px;
+}
+
+.c-footer .ip {
+  font-weight: bold;
+  margin-left: 5px;
+}
